@@ -214,6 +214,11 @@ npm run start        # Inicia el servidor de producción (requiere build previo)
 
 # Calidad de código
 npm run lint         # Ejecuta ESLint para verificar el código
+
+# Testing
+npm test             # Ejecuta todas las pruebas unitarias
+npm run test:watch   # Ejecuta pruebas en modo watch
+npm run test:coverage # Ejecuta pruebas con reporte de cobertura
 ```
 
 ## 🔐 Variables de Entorno
@@ -234,6 +239,26 @@ npm run lint         # Ejecuta ESLint para verificar el código
 - ✅ Tipado completo con TypeScript
 - ✅ Componentes reutilizables y modulares
 - ✅ Optimización de rendimiento con debounce en búsquedas
+- ✅ Pruebas unitarias completas con Jest y React Testing Library
+
+## 🧪 Testing
+
+El proyecto incluye un conjunto completo de pruebas unitarias que cubren:
+
+- **Cálculo de Interés**: Validación de fórmulas de interés compuesto con diferentes escenarios
+- **Validaciones**: Esquemas de validación del simulador (montos, plazos, aportes)
+- **Utilidades**: Formato y parseo de moneda, porcentajes
+- **Funciones de Productos**: Búsqueda, filtrado, obtención por ID/categoría
+- **Hooks**: useDebounce con diferentes tipos de valores
+- **SSR**: Verificación de que la página de productos use Server-Side Rendering
+
+Para ejecutar las pruebas:
+
+```bash
+npm test
+```
+
+Ver más detalles en [`__tests__/README.md`](__tests__/README.md)
 
 ## 🎨 Diseño
 
