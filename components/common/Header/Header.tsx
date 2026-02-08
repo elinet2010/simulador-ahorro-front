@@ -27,23 +27,19 @@ export default function Header() {
       className="header-appbar"
     >
       <Toolbar className="header-toolbar">
-        <Typography
-          variant="h6"
-          component={Link}
-          href="/"
-          className="header-logo"
-        >
+        <Link href="/" className="header-logo">
           <Icon
             component={SavingsIcon}
             className="header-logo-icon"
           />
           <Typography
             component="span"
+            variant="h6"
             className="header-logo-text"
           >
             Ahorro Digital
           </Typography>
-        </Typography>
+        </Link>
 
         {/* Menú desktop - componente cliente para detección de ruta activa */}
         <DesktopMenu />
