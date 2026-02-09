@@ -1,5 +1,3 @@
-import React from 'react';
-import Link from 'next/link';
 import './Header.css';
 import {
   AppBar,
@@ -27,7 +25,7 @@ export default function Header() {
       className="header-appbar"
     >
       <Toolbar className="header-toolbar">
-        <Link href="/" className="header-logo">
+        <a href="/" className="header-logo" rel="noopener noreferrer">
           <Icon
             component={SavingsIcon}
             className="header-logo-icon"
@@ -39,7 +37,7 @@ export default function Header() {
           >
             Ahorro Digital
           </Typography>
-        </Link>
+        </a>
 
         {/* Menú desktop - componente cliente para detección de ruta activa */}
         <DesktopMenu />
